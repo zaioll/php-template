@@ -2,9 +2,16 @@
   "name": "zaioll/delivery",
   "type": "project",
   "require": {
-    "php": "^7.4"
+    "php": "^7.4",
+    "sirius-mvc": "^0.0.1"
   },
   "license": "SaaS",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:zaioll-php/sirius-mvc.git"
+    }
+  ],
   "authors": [
     {
       "name": "zaioll",
