@@ -1,0 +1,15 @@
+{
+    "name": "zaioll/delivery",
+    "type": "project",
+    "require": {
+        "php": "^7.4"
+    },
+    "license": "SaaS",
+    "authors": [
+        {
+            "name": "zaioll",
+            "email": "zaioll@protonmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
