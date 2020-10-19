@@ -1,0 +1,46 @@
+version: "3.5"
+
+services:
+    web:
+        build: containers/nginx
+        container_name: delivery-web
+        ports:
+            - "7200:80"
+            - "8443:443"
+        volumes:
+            - .:/var/www/html
+            - delivery-app_socket:/run/php
+        depends_on:
+            - app
+    app:
+        image: zaioll/php-zts:7.4
+        container_name: "delivery-app"
+        environment:
+            ENABLE_OPCACHE: 0
+            ENABLE_XDEBUG: 1
+            XDEBUG_CONFIG: "remote_autostart=1 remote_enable=1 remote_host=192.168.0.110 idekey=VSCODE"
+            POSTGRES_HOST: "delivery-db"
+            POSTGRES_DB: "delivery"
+            POSTGRES_USER: "postgres"
+            POSTGRES_PASSWORD: "123456aa"
+        ports:
+            - "1234:1234"
+        volumes:
+            - .:/var/www/html
+            - delivery-app_socket:/run/php
+        depends_on:
+            - db
+    db:
+        image: zaioll/postgres:latest
+        container_name: "delivery-db"
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+        ports:
+            - "5430:5432"
+        environment:
+            POSTGRES_DB: "delivery"
+            POSTGRES_USER: "postgres"
+            POSTGRES_PASSWORD: "123456aa"
+volumes:
+    delivery-app_socket:
+    pgdata:

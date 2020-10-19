@@ -8,7 +8,7 @@ trim_trailing_whitespace = false
 insert_final_newline = false
 end_of_line = lf
 
-[*.{json, js, scss, html, css}]
+[*.{json, js, scss, html, css, yml, yaml}]
 indent_size = 2 
 
 [*.{php}]
