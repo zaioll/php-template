@@ -3,18 +3,42 @@
   "type": "project",
   "require": {
     "php": "^7.4",
-    "zaioll/sirius-mvc": "dev-master"
+    "zaioll/sirius": "dev-development"
   },
   "license": "SaaS",
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@gitlab.com:zaioll-php/sirius-mvc.git"
+      "url": "git@gitlab.com:zaioll-php/sirius.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:zaioll-php/base/behaviors.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:zaioll-php/base/object.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:zaioll-php/datatypes.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:zaioll-php/base/virtualizedproperty.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:zaioll-php/base/errorcolector.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:zaioll-php/base/configurable.git"
     }
   ],
   "autoload": {
     "psr-4": {
-      "App\\": "src/"
+      "App\\": "src"
     }
   },
   "authors": [
