@@ -1,6 +1,6 @@
 {
-  "name": "zaioll/delivery",
-  "description": "Aplicação para gerenciamento de delivery",
+  "name": "zaioll/projeto-template",
+  "description": "Template para projeto PHP",
   "type": "project",
   "require": {
     "php": "^7.4",
