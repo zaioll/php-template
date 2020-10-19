@@ -4,7 +4,7 @@
   "type": "project",
   "require": {
     "php": "^7.4",
-    "zaioll/sirius": "dev-development"
+    "sirius-mvc/framework": "dev-development"
   },
   "require-dev": {
     "captainhook/captainhook": "@stable",
@@ -18,7 +18,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@gitlab.com:zaioll-php/sirius.git"
+      "url": "git@gitlab.com:sirius-mvc/framework.git"
     },
     {
       "type": "vcs",
