@@ -41,6 +41,10 @@
       "App\\": "src"
     }
   },
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true
+  },
   "authors": [
     {
       "name": "zaioll",
