@@ -1,5 +1,6 @@
 {
   "name": "zaioll/delivery",
+  "description": "Aplicação para gerenciamento de delivery",
   "type": "project",
   "require": {
     "php": "^7.4",
