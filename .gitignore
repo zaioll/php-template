@@ -34,3 +34,6 @@
 
 vendor/*
 runtime/*
+.phpunit.result.cache
+
+tests/coverage/*
