@@ -3,7 +3,7 @@
   "description": "Template para projeto PHP",
   "type": "project",
   "require": {
-    "php": "^7.4",
+    "php": ">=7.4",
     "sirius-mvc/framework": "dev-development"
   },
   "require-dev": {
@@ -57,10 +57,7 @@
   },
   "config": {
     "process-timeout": 0,
-    "sort-packages": true,
-    "platform": {
-      "php": "7.4"
-    }
+    "sort-packages": true
   },
   "authors": [
     {
